@@ -1,2 +1,2 @@
-# KubriksCodeTN.github.io
+# KubriksCodeTN
 Working and academic experiences
