@@ -1,0 +1,183 @@
+html, body {
+    height: 100%;
+    /* Manteniamo il tuo preferito */
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    /* Un grigio antracite invece del nero puro */
+    /* Le icone nere rimarranno visibili ma con un look "tonalità su tonalità" */
+    background: #2b2b2b; 
+    color: #e0e0e0; 
+}
+
+/* Link: usiamo il tuo magenta per un look "hacker" moderno */
+a {
+    color: #fb2355;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #fff;
+}
+
+p, li {
+    font-weight: 300;
+}
+
+h5 {
+    font-weight: 700;
+    color: #fb2355;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Navbar: stile minimal terminale */
+.navbar button:hover {
+    color: #fb2355;
+    text-shadow: 0 0 5px #fb2355;
+}
+
+/* Timeline: stile "Logic Analyzer" */
+/* IL TRUCCO PER LE ICONE NERE: */
+/* Questo filtro inverte leggermente il colore o aggiunge un riflesso */
+/* se le tue icone sono tag <img> o classi <i> */
+i, img.icon {
+    filter: brightness(0) invert(0.9); /* Le rende quasi bianche/grigie */
+    /* Oppure, se vuoi che restino nere ma con un contorno per vederle: */
+    /* filter: drop-shadow(0px 0px 1px rgba(255,255,255,0.5)); */
+}
+
+/* Timeline: usiamo un grigio medio per la linea */
+ul.timeline:before {
+    background: #444;
+    left: 29px;
+    width: 2px;
+}
+
+ul.timeline > li:before {
+    background: #2b2b2b; /* Stesso colore dello sfondo */
+    border: 2px solid #fb2355;
+    box-shadow: 0 0 5px #fb2355;
+}
+
+/* Progress bar: sfondi più scuri per far risaltare i colori */
+.progress {
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+}
+
+.progress-bar {
+    color: #000;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+/* Colori accesi su sfondo nero */
+.progress-bar-one   { background-color: #fb2355; }
+.progress-bar-two   { background-color: #00d4ff; } /* Un bel ciano per bilanciare */
+.progress-bar-three { background-color: #ecc10e; }
+.progress-bar-four  { background-color: #00ff41; } /* Verde per le skill forti */
+.progress-bar-five  { background-color: #6584a6; }
+
+/* Pulsanti stile "Command Line" */
+#sticker .btn-secondary {
+    color: #fff;
+    background-color: #fb2355;
+    border: none;
+    border-radius: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+#sticker .btn-secondary:hover {
+    background-color: #fff;
+    color: #fb2355;
+    box-shadow: 0 0 15px #fff;
+}
+
+/* Selezione testo */
+::selection {
+    background: #fb2355;
+    color: #fff;
+}
+
+button.btn b, 
+button.btn {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+/* Effetto illuminazione al passaggio del mouse */
+button.btn:hover {
+    background-color: transparent !important; /* Mantiene lo sfondo vuoto */
+    border-color: #fb2355 !important;        /* Il bordo diventa magenta */
+    
+    /* Effetto Neon: crea un bagliore esterno dello stesso colore del bordo */
+    /* Sintassi: box-shadow: x y sfocatura espansione colore */
+    box-shadow: 0 0 10px #fb2355, inset 0 0 5px rgba(251, 35, 85, 0.2) !important;
+    
+    /* Se vuoi che anche il testo "brilli" leggermente */
+    text-shadow: 0 0 5px #fb2355;
+}
+
+/* 1. Sfondo principale della finestra */
+.modal-content {
+    background-color: #1a1a1a !important; /* Grigio scurissimo terminale */
+    color: #ffffff !important;           /* Testo bianco */
+    border: 2px solid #fb2355 !important; /* Bordo magenta neon */
+    border-radius: 0 !important;          /* Angoli squadrati hacker */
+    box-shadow: 0 0 20px rgba(251, 35, 85, 0.3) !important; /* Bagliore esterno */
+}
+
+/* 2. Header (la parte alta con il titolo) */
+.modal-header {
+    border-bottom: 1px solid #333 !important;
+    background-color: #222 !important;
+}
+
+/* 3. Il titolo della finestra */
+.modal-title {
+    color: #fb2355 !important;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+}
+
+/* 4. La "X" per chiudere la finestra */
+.btn-close {
+    filter: invert(1) brightness(2) !important; /* Rende la X bianca invece che nera */
+}
+
+/* 5. Il corpo della finestra (dove c'è il testo) */
+.modal-body {
+    background-color: #1a1a1a !important;
+}
+
+/* 6. Il footer (dove ci sono i pulsanti Chiudi/Salva) */
+.modal-footer {
+    border-top: 1px solid #333 !important;
+    background-color: #222 !important;
+}
+
+/* 7. Fix per testi in grassetto o paragrafi nel modal */
+.modal-body b, .modal-body p, .modal-body li {
+    color: #ffffff !important;
+}
+
+.progress {
+    background-color: #333 !important; /* Sfondo della barra vuota visibile */
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-family: 'Roboto Mono', monospace;
+    opacity: 1 !important; /* Rimuove eventuali trasparenze di Bootstrap */
+}
+
+.nav-link.active {
+    color: #000000 !important;
+    font-family: 'Roboto Mono', monospace;
+    opacity: 1 !important; /* Rimuove eventuali trasparenze di Bootstrap */
+}
+
